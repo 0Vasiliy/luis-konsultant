@@ -16,8 +16,10 @@ type LazyComponent<T> = (T & DefineComponent<HydrationStrategies, {}, {}, {}, {}
 interface _GlobalComponents {
       'AnimatedSticker': typeof import("../../components/AnimatedSticker.vue")['default']
     'ConsultationButton': typeof import("../../components/ConsultationButton.vue")['default']
+    'ConsultationForm': typeof import("../../components/ConsultationForm.vue")['default']
     'ExpertConsultation': typeof import("../../components/ExpertConsultation.vue")['default']
     'MainDashboard': typeof import("../../components/MainDashboard.vue")['default']
+    'NavigationMenu': typeof import("../../components/NavigationMenu.vue")['default']
     'PhotoGallery': typeof import("../../components/PhotoGallery.vue")['default']
     'NuxtWelcome': typeof import("../../node_modules/nuxt/dist/app/components/welcome.vue")['default']
     'NuxtLayout': typeof import("../../node_modules/nuxt/dist/app/components/nuxt-layout")['default']
@@ -45,8 +47,10 @@ interface _GlobalComponents {
     'NuxtRouteAnnouncer': typeof import("../../node_modules/nuxt/dist/app/components/server-placeholder")['default']
       'LazyAnimatedSticker': LazyComponent<typeof import("../../components/AnimatedSticker.vue")['default']>
     'LazyConsultationButton': LazyComponent<typeof import("../../components/ConsultationButton.vue")['default']>
+    'LazyConsultationForm': LazyComponent<typeof import("../../components/ConsultationForm.vue")['default']>
     'LazyExpertConsultation': LazyComponent<typeof import("../../components/ExpertConsultation.vue")['default']>
     'LazyMainDashboard': LazyComponent<typeof import("../../components/MainDashboard.vue")['default']>
+    'LazyNavigationMenu': LazyComponent<typeof import("../../components/NavigationMenu.vue")['default']>
     'LazyPhotoGallery': LazyComponent<typeof import("../../components/PhotoGallery.vue")['default']>
     'LazyNuxtWelcome': LazyComponent<typeof import("../../node_modules/nuxt/dist/app/components/welcome.vue")['default']>
     'LazyNuxtLayout': LazyComponent<typeof import("../../node_modules/nuxt/dist/app/components/nuxt-layout")['default']>

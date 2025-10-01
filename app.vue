@@ -5,7 +5,6 @@
 </template>
 
 <script setup lang="ts">
-// Глобальные настройки приложения
 useHead({
   htmlAttrs: {
     lang: 'ru'

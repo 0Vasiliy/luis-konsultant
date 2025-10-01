@@ -40,7 +40,6 @@ const handleArrowClick = () => {
 </template>
 
 <style scoped>
-/* Photo Gallery Content */
 .photo-gallery-content {
   position: relative;
   width: 37.33333333333333vw;
@@ -65,7 +64,6 @@ const handleArrowClick = () => {
   }
 }
 
-/* Gallery Frame */
 .gallery-frame {
   width: 9.066666666666666vw;
   height: 35.46666666666667vw;
@@ -86,7 +84,6 @@ const handleArrowClick = () => {
   margin-right: 2vh;
 }
 
-/* Gallery Photo */
 .gallery-photo {
   width: 8.533333333333333vw;
   height: 20.266666666666666vw;
@@ -98,7 +95,6 @@ const handleArrowClick = () => {
   margin-left: 0;
 }
 
-/* Gallery Arrow */
 .gallery-arrow {
   width: 3.2vw;
   height: 3.2vw;

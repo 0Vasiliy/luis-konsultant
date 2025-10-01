@@ -1,6 +1,5 @@
 <template>
   <div class="min-h-screen bg-teal-gradient">
-    <!-- Навигация -->
     <nav class="bg-white shadow-sm border-b">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
@@ -18,19 +17,15 @@
       </div>
     </nav>
 
-    <!-- Основной контент -->
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      <!-- Заголовок -->
       <div class="text-center mb-12">
         <h1 class="text-4xl font-bold text-gray-900 mb-4">
-          Страница со стикером
+          О нас
         </h1>
         <p class="text-xl text-gray-600">
-          Прокрутите страницу вниз и наведите курсор на стикер справа
+          Познакомьтесь с нашей командой и узнайте больше о наших услугах
         </p>
       </div>
-
-      <!-- Контентные блоки -->
       <div class="space-y-8">
         <div class="content-block">
           <h2>Консультация эксперта</h2>
@@ -99,14 +94,11 @@
         </div>
       </div>
     </div>
-
-    <!-- Анимированный стикер -->
     <AnimatedSticker />
   </div>
 </template>
 
 <script setup lang="ts">
-// Мета-теги для SEO
 useHead({
   title: 'Страница со стикером - Luis Konsultant',
   meta: [
@@ -149,14 +141,12 @@ useHead({
   font-size: 1rem;
 }
 
-/* Навигация */
 nav {
   background: rgba(255, 255, 255, 0.95) !important;
   backdrop-filter: blur(20px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
 }
 
-/* Заголовок */
 .text-center h1 {
   color: white;
   text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);

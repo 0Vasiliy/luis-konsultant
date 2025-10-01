@@ -1,4 +1,4 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
+
 export default defineNuxtConfig({
   nitro: {
     preset: 'static',
@@ -7,17 +7,18 @@ export default defineNuxtConfig({
       publicDir: '.output/public'
     },
     prerender: {
-      routes: ['/', '/qr-generator'],
+      routes: ['/', '/biography', '/sticker', '/contacts', '/cases', '/services'],
       crawlLinks: true
     }
   },
   app: {
     baseURL: process.env.NODE_ENV === 'production' ? '/luis-konsultant/' : '/',
+    buildAssetsDir: 'assets/',
     
   },
   ssr: false,
   devtools: { enabled: true },
-  compatibilityDate: '2024-09-20',
+  compatibilityDate: '2025-09-22',
   css: ['~/assets/scss/main.scss'],
   modules: [
     '@nuxtjs/tailwindcss',

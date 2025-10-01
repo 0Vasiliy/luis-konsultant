@@ -1,6 +1,5 @@
 <template>
   <div class="biography-page">
-    <!-- Анимированный фон -->
     <div class="animated-background">
       <div class="floating-shapes">
         <div class="shape shape-1"></div>
@@ -10,7 +9,6 @@
       </div>
     </div>
 
-    <!-- Кнопка возврата -->
     <button class="back-button" @click="goBack">
       <div class="back-icon">
         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -20,13 +18,10 @@
       <span>Назад к консультации</span>
     </button>
 
-    <!-- Заголовок страницы -->
     <div class="page-header">
       <h1 class="page-title">Наши эксперты</h1>
       <p class="page-subtitle">Познакомьтесь с командой профессионалов</p>
     </div>
-
-    <!-- Контейнер с биографиями -->
     <div class="biography-container">
       <div 
         v-for="(consultant, index) in consultants" 
@@ -37,7 +32,6 @@
         :style="{ '--delay': index * 0.2 + 's' }"
         :data-consultant-index="index"
       >
-        <!-- Фотография консультанта -->
         <div class="consultant-photo">
           <img :src="consultant.photo" :alt="consultant.name" />
           <div class="photo-overlay">
@@ -47,8 +41,6 @@
             </div>
           </div>
         </div>
-
-        <!-- Биография консультанта -->
         <div class="consultant-biography">
           <div class="biography-content">
             <h2 class="consultant-name">{{ consultant.name }}</h2>
@@ -78,8 +70,6 @@
                   {{ skill }}
                 </span>
               </div>
-              
-              <!-- Подсказка для специализаций в этой биографии -->
               <div 
                 v-if="tooltipVisible && activeConsultantIndex === index"
                 class="skill-tooltip"
@@ -108,8 +98,6 @@
         </div>
       </div>
     </div>
-
-    <!-- Индикаторы навигации -->
     <div class="navigation-dots">
       <button 
         v-for="(consultant, index) in consultants" 
@@ -126,7 +114,6 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue';
 
-// Мета-теги для SEO
 useHead({
   title: 'Биографии экспертов - Luis Konsultant',
   meta: [
@@ -143,7 +130,6 @@ const tooltipBelow = ref(false);
 const activeConsultantIndex = ref(0);
 const activeSkill = ref('');
 
-// Описания специализаций
 const skillDescriptions = {
   'Стратегическое планирование': 'Разработка долгосрочных стратегий развития компании, анализ рынка и конкурентов, определение целей и приоритетов для достижения устойчивого роста.',
   'Управление изменениями': 'Помощь организациям в адаптации к новым условиям, управление трансформационными процессами, минимизация сопротивления изменениям.',
@@ -159,7 +145,6 @@ const skillDescriptions = {
   'Мотивация персонала': 'Разработка систем стимулирования и мотивации сотрудников для повышения их вовлеченности и производительности.'
 };
 
-// Данные консультантов
 const consultants = ref([
   {
     id: 1,
@@ -213,47 +198,38 @@ const consultants = ref([
 
 const setActiveCard = (index: number) => {
   activeCard.value = index;
-  // Обновляем позицию подсказки при смене активной карточки
+  
   if (tooltipVisible.value) {
     updateTooltipPosition();
   }
 };
 
-// Функции для работы с подсказками
 const showTooltip = (event: MouseEvent, skill: string, consultantIndex: number) => {
   const description = skillDescriptions[skill as keyof typeof skillDescriptions];
   if (!description) return;
 
-  // Сохраняем информацию о текущей биографии и специализации
   activeConsultantIndex.value = consultantIndex;
   activeSkill.value = skill;
 
   const target = event.target as HTMLElement;
   const rect = target.getBoundingClientRect();
-  
-  // Находим контейнер специализаций для относительного позиционирования
   const skillsContainer = target.closest('.consultant-skills') as HTMLElement;
   if (!skillsContainer) return;
   
   const containerRect = skillsContainer.getBoundingClientRect();
-  
-  // Вычисляем позицию относительно контейнера
   let x = rect.left - containerRect.left + rect.width / 2;
   let y = rect.top - containerRect.top - 10;
   
-  // Проверяем, не выходит ли подсказка за левую границу контейнера
   if (x < 150) {
     x = 150;
   }
   
-  // Проверяем, не выходит ли подсказка за правую границу контейнера
   if (x > containerRect.width - 150) {
     x = containerRect.width - 150;
   }
   
-  // Проверяем, не выходит ли подсказка за верхнюю границу контейнера
   if (y < 50) {
-    y = rect.top - containerRect.top + rect.height + 10; // Показываем снизу
+    y = rect.top - containerRect.top + rect.height + 10; 
     tooltipBelow.value = true;
   } else {
     tooltipBelow.value = false;
@@ -262,8 +238,6 @@ const showTooltip = (event: MouseEvent, skill: string, consultantIndex: number) 
   tooltipContent.value = description;
   tooltipPosition.value = { x, y };
   tooltipVisible.value = true;
-  
-  // Предотвращаем всплытие события
   event.stopPropagation();
 };
 
@@ -271,48 +245,37 @@ const hideTooltip = () => {
   tooltipVisible.value = false;
 };
 
-// Обработчик клика по документу для скрытия подсказки
 const handleDocumentClick = (event: MouseEvent) => {
   const target = event.target as HTMLElement;
-  // Проверяем, не кликнули ли мы на тег специализации
   if (!target.closest('.skill-tag')) {
     hideTooltip();
   }
 };
 
-// Функция для обновления позиции подсказки при изменении размера окна
 const updateTooltipPosition = () => {
   if (!tooltipVisible.value || !activeSkill.value) return;
 
-  // Находим тег специализации по data-атрибутам
   const skillTag = document.querySelector(`[data-skill="${activeSkill.value}"][data-consultant-index="${activeConsultantIndex.value}"]`) as HTMLElement;
   if (!skillTag) return;
 
-  // Проверяем, видим ли элемент
   const rect = skillTag.getBoundingClientRect();
   if (rect.width === 0 || rect.height === 0) return;
-  
-  // Находим контейнер специализаций для относительного позиционирования
   const skillsContainer = skillTag.closest('.consultant-skills') as HTMLElement;
   if (!skillsContainer) return;
   
   const containerRect = skillsContainer.getBoundingClientRect();
   
-  // Вычисляем позицию относительно контейнера
   let x = rect.left - containerRect.left + rect.width / 2;
   let y = rect.top - containerRect.top - 10;
   
-  // Проверяем, не выходит ли подсказка за левую границу контейнера
   if (x < 150) {
     x = 150;
   }
   
-  // Проверяем, не выходит ли подсказка за правую границу контейнера
   if (x > containerRect.width - 150) {
     x = containerRect.width - 150;
   }
   
-  // Проверяем, не выходит ли подсказка за верхнюю границу контейнера
   if (y < 50) {
     y = rect.top - containerRect.top + rect.height + 10;
     tooltipBelow.value = true;
@@ -323,7 +286,6 @@ const updateTooltipPosition = () => {
   tooltipPosition.value = { x, y };
 };
 
-// Обработчик изменения размера окна с debounce
 let resizeTimeout: NodeJS.Timeout | null = null;
 const handleResize = () => {
   if (resizeTimeout) {
@@ -335,7 +297,6 @@ const handleResize = () => {
 };
 
 const goBack = () => {
-  // Анимация выхода
   const page = document.querySelector('.biography-page');
   if (page) {
     page.classList.add('exiting');
@@ -348,23 +309,20 @@ const goBack = () => {
 };
 
 onMounted(() => {
-  // Анимация входа
   const page = document.querySelector('.biography-page');
   if (page) {
     page.classList.add('entering');
   }
   
-  // Добавляем обработчики событий
   document.addEventListener('click', handleDocumentClick);
   window.addEventListener('resize', handleResize);
 });
 
 onUnmounted(() => {
-  // Удаляем обработчики событий
+
   document.removeEventListener('click', handleDocumentClick);
   window.removeEventListener('resize', handleResize);
   
-  // Очищаем таймер
   if (resizeTimeout) {
     clearTimeout(resizeTimeout);
   }
@@ -372,7 +330,6 @@ onUnmounted(() => {
 </script>
 
 <style scoped>
-/* Основные стили страницы */
 .biography-page {
   min-height: 100vh;
   background: linear-gradient(135deg, #14b8a6 0%, #0d9488 50%, #0f766e 100%);
@@ -393,7 +350,6 @@ onUnmounted(() => {
   transform: translateY(-50px);
 }
 
-/* Анимированный фон */
 .animated-background {
   position: absolute;
   top: 0;
@@ -457,7 +413,6 @@ onUnmounted(() => {
   }
 }
 
-/* Кнопка возврата */
 .back-button {
   position: fixed;
   top: 2rem;
@@ -506,7 +461,6 @@ onUnmounted(() => {
   }
 }
 
-/* Заголовок страницы */
 .page-header {
   text-align: center;
   padding: 6rem 2rem 4rem;
@@ -541,7 +495,6 @@ onUnmounted(() => {
   }
 }
 
-/* Контейнер с биографиями */
 .biography-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -550,7 +503,6 @@ onUnmounted(() => {
   z-index: 10;
 }
 
-/* Карточка консультанта */
 .consultant-card {
   background: rgba(255, 255, 255, 0.95);
   border-radius: 20px;
@@ -583,7 +535,6 @@ onUnmounted(() => {
   }
 }
 
-/* Фотография консультанта */
 .consultant-photo {
   position: relative;
   height: 300px;
@@ -628,7 +579,6 @@ onUnmounted(() => {
   opacity: 0.9;
 }
 
-/* Биография консультанта */
 .consultant-biography {
   padding: 2rem;
 }
@@ -727,7 +677,6 @@ onUnmounted(() => {
   font-weight: bold;
 }
 
-/* Навигационные точки */
 .navigation-dots {
   position: fixed;
   bottom: 2rem;
@@ -758,7 +707,6 @@ onUnmounted(() => {
   transform: scale(1.1);
 }
 
-/* Подсказка для специализаций */
 .skill-tooltip {
   position: absolute;
   z-index: 1000;
@@ -828,7 +776,6 @@ onUnmounted(() => {
   }
 }
 
-/* Адаптивность */
 @media (max-width: 768px) {
   .page-title {
     font-size: 2.5rem;

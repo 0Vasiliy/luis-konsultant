@@ -16,8 +16,10 @@ type LazyComponent<T> = (T & DefineComponent<HydrationStrategies, {}, {}, {}, {}
 
 export const AnimatedSticker: typeof import("../components/AnimatedSticker.vue")['default']
 export const ConsultationButton: typeof import("../components/ConsultationButton.vue")['default']
+export const ConsultationForm: typeof import("../components/ConsultationForm.vue")['default']
 export const ExpertConsultation: typeof import("../components/ExpertConsultation.vue")['default']
 export const MainDashboard: typeof import("../components/MainDashboard.vue")['default']
+export const NavigationMenu: typeof import("../components/NavigationMenu.vue")['default']
 export const PhotoGallery: typeof import("../components/PhotoGallery.vue")['default']
 export const NuxtWelcome: typeof import("../node_modules/nuxt/dist/app/components/welcome.vue")['default']
 export const NuxtLayout: typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']
@@ -45,8 +47,10 @@ export const NuxtIsland: typeof import("../node_modules/nuxt/dist/app/components
 export const NuxtRouteAnnouncer: typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']
 export const LazyAnimatedSticker: LazyComponent<typeof import("../components/AnimatedSticker.vue")['default']>
 export const LazyConsultationButton: LazyComponent<typeof import("../components/ConsultationButton.vue")['default']>
+export const LazyConsultationForm: LazyComponent<typeof import("../components/ConsultationForm.vue")['default']>
 export const LazyExpertConsultation: LazyComponent<typeof import("../components/ExpertConsultation.vue")['default']>
 export const LazyMainDashboard: LazyComponent<typeof import("../components/MainDashboard.vue")['default']>
+export const LazyNavigationMenu: LazyComponent<typeof import("../components/NavigationMenu.vue")['default']>
 export const LazyPhotoGallery: LazyComponent<typeof import("../components/PhotoGallery.vue")['default']>
 export const LazyNuxtWelcome: LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/welcome.vue")['default']>
 export const LazyNuxtLayout: LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']>

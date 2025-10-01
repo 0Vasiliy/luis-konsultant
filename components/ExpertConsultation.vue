@@ -20,7 +20,6 @@ defineProps(['style']);
 </template>
 
 <style scoped>
-/* Expert Consultation Content */
 .expert-consultation-content {
   width: 37.33333333333333vw;
   display: flex;
@@ -39,7 +38,6 @@ defineProps(['style']);
   margin-top: 2.533333333333333vw;
 }
 
-/* Expert Title */
 .expert-title {
   width: 28.8vw;
   flex-shrink: 0;
@@ -51,7 +49,7 @@ defineProps(['style']);
   color: #333333;
 }
 
-/* Experts Photos */
+
 .experts-photos {
   position: relative;
   width: 22.666666666666666vw;
@@ -64,7 +62,6 @@ defineProps(['style']);
   align-items: flex-start;
 }
 
-/* Expert Photo Base Styles */
 .expert-photo {
   width: 8.533333333333333vw;
   height: 8.533333333333333vw;
@@ -78,7 +75,6 @@ defineProps(['style']);
   margin-top: 0;
 }
 
-/* Expert Photo 2 */
 .expert-photo-2 {
   width: 8.533333333333333vw;
   height: 8.533333333333333vw;
@@ -92,7 +88,6 @@ defineProps(['style']);
   margin-top: 0;
 }
 
-/* Expert Photo 3 */
 .expert-photo-3 {
   width: 8.533333333333333vw;
   height: 8.533333333333333vw;
@@ -106,13 +101,11 @@ defineProps(['style']);
   margin-top: 0;
 }
 
-/* Consultation Button */
 .consultation-button {
   flex-shrink: 0;
   position: relative;
 }
 
-/* Label */
 .text_5 {
   flex-shrink: 0;
 }

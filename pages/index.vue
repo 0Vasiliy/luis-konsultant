@@ -7,7 +7,6 @@
 <script setup lang="ts">
 import MainDashboard from '~/components/MainDashboard.vue';
 
-// Мета-теги для SEO
 useHead({
   title: 'Главная страница - Luis Konsultant',
   meta: [

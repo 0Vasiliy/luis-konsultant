@@ -1,20 +1,41 @@
-<script setup>
+<script setup lang="ts">
+import { ref } from 'vue';
+import ConsultationForm from './ConsultationForm.vue';
+
 defineProps(['style']);
 
+const showConsultationForm = ref(false);
+
 const handleClick = () => {
-  // Переход на страницу стикера
-  navigateTo('/sticker');
+  showConsultationForm.value = true;
+};
+
+const closeConsultationForm = () => {
+  showConsultationForm.value = false;
+};
+
+const handleFormSubmitted = (data: any) => {
+  console.log('Form submitted with data:', data);
+  // Здесь можно добавить дополнительную логику после отправки формы
 };
 </script>
 
 <template>
-  <div class="consultation-button" @click="handleClick">
-    <span class="button-text"> Получить консультацию </span>
+  <div>
+    <div class="consultation-button" @click="handleClick">
+      <span class="button-text"> Заказать консультацию </span>
+    </div>
+    
+    <!-- Форма консультации -->
+    <ConsultationForm 
+      :is-visible="showConsultationForm"
+      @close="closeConsultationForm"
+      @submitted="handleFormSubmitted"
+    />
   </div>
 </template>
 
 <style scoped>
-/* Consultation Button */
 .consultation-button {
   height: 6.666666666666667vw;
   display: flex;
@@ -50,7 +71,6 @@ const handleClick = () => {
   box-shadow: 0px 1px 8px 0px rgba(115, 115, 115, 0.1);
 }
 
-/* Button Text */
 .button-text {
   flex-shrink: 0;
 }

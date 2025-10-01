@@ -1,6 +1,7 @@
 <script setup>
 import ExpertConsultation from './ExpertConsultation.vue';
 import PhotoGallery from './PhotoGallery.vue';
+import NavigationMenu from './NavigationMenu.vue';
 defineProps(['style']);
 </script>
 
@@ -8,11 +9,11 @@ defineProps(['style']);
   <div class="main-dashboard">
     <ExpertConsultation class="expert-consultation-container" />
     <PhotoGallery class="photo-gallery-container" />
+    <NavigationMenu class="navigation-menu" />
   </div>
 </template>
 
 <style scoped>
-/* Main Dashboard */
 .main-dashboard {
   position: absolute;
   width: 100%;
@@ -31,14 +32,13 @@ defineProps(['style']);
   min-height: 100%;
 }
 
-/* Expert Consultation Container */
 .expert-consultation-container {
   position: relative;
   margin-left: 2.533333333333333vw;
   margin-top: 2.533333333333333vw;
 }
 
-/* Photo Gallery Container */
+
 .photo-gallery-container {
   position: relative;
   width: 37.33333333333333vw;
@@ -49,5 +49,12 @@ defineProps(['style']);
   z-index: 0;
   margin-left: 31.466666666666665vw;
   margin-top: 2.533333333333333vw;
+}
+
+.navigation-menu {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  z-index: 1000;
 }
 </style>

@@ -5,14 +5,12 @@
     @mouseenter="expandSticker"
     @mouseleave="collapseSticker"
   >
-    <!-- Триггер стикера -->
     <div class="sticker-trigger">
       <div class="arrow" :class="{ rotated: isExpanded }">
         {{ isExpanded ? '→' : '←' }}
       </div>
     </div>
 
-    <!-- Контент стикера -->
     <div 
       class="sticker-content"
       :class="{ visible: isExpanded }"
@@ -37,24 +35,20 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
 
-// Состояние стикера
 const isExpanded = ref(false)
 const images = ref<string[]>([])
 const isLoading = ref(false)
 
-// Фотографии экспертов из biography
 const expertImages = [
   'https://seal-img.nos-jd.163yun.com/obj/w5rCgMKVw6DCmGzCmsK-/62698404343/36a6/09f8/1612/666f26efefea89f249fca6a89aea5686.png',
   'https://seal-img.nos-jd.163yun.com/obj/w5rCgMKVw6DCmGzCmsK-/62698403620/c82a/7f01/d21a/5094ce73392b9281bfcb58ad89e3cc08.png',
   'https://seal-img.nos-jd.163yun.com/obj/w5rCgMKVw6DCmGzCmsK-/62698402583/9ed8/9e16/9873/ef3dabacdd0846f204195e9094a4485f.png'
 ]
 
-// Функция для загрузки изображений экспертов
 const loadExpertImages = (): void => {
   images.value = expertImages
 }
 
-// Функции для управления стикером
 const expandSticker = (): void => {
   isExpanded.value = true
 }
@@ -63,12 +57,10 @@ const collapseSticker = (): void => {
   isExpanded.value = false
 }
 
-// Функция для перехода на страницу biography
 const goToBiography = (): void => {
   navigateTo('/biography')
 }
 
-// Загружаем изображения при монтировании компонента
 onMounted(() => {
   loadExpertImages()
 })
