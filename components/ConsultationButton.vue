@@ -16,7 +16,6 @@ const closeConsultationForm = () => {
 
 const handleFormSubmitted = (data: any) => {
   console.log('Form submitted with data:', data);
-  // Здесь можно добавить дополнительную логику после отправки формы
 };
 </script>
 
