@@ -274,7 +274,7 @@ const closeForm = () => {
   display: block;
   font-weight: 500;
   color: #333;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .form-group input,

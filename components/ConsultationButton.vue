@@ -48,7 +48,7 @@ const handleFormSubmitted = (data: any) => {
   flex-shrink: 0;
   border-radius: 0.8vw;
   background-color: var(--Light-Theme-Primary-White, #ffffff);
-  box-shadow: 0px 2px 10px 0px rgba(115, 115, 115, 0.1);
+  /* box-shadow: 0px 2px 10px 0px rgba(115, 115, 115, 0.1); */
   font-size: 2.1333333333333333vw;
   font-family: 'Exo 2';
   font-weight: 500;
@@ -61,12 +61,10 @@ const handleFormSubmitted = (data: any) => {
 }
 
 .consultation-button:hover {
-  transform: translateY(-1px);
   box-shadow: 0px 3px 12px 0px rgba(115, 115, 115, 0.15);
 }
 
 .consultation-button:active {
-  transform: translateY(0);
   box-shadow: 0px 1px 8px 0px rgba(115, 115, 115, 0.1);
 }
 
