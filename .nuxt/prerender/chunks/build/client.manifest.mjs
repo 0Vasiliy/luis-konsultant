@@ -1,4 +1,25 @@
 const client_manifest = {
+  "_8W_jNeGf.js": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "8W_jNeGf.js",
+    "name": "ConsultationForm",
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.js",
+      "_DlAUqK2U.js"
+    ],
+    "css": [
+      "ConsultationForm.BWbmS2Gx.css"
+    ]
+  },
+  "ConsultationForm.BWbmS2Gx.css": {
+    "file": "ConsultationForm.BWbmS2Gx.css",
+    "resourceType": "style",
+    "prefetch": true,
+    "preload": true
+  },
   "_CRx-DrO-.js": {
     "resourceType": "script",
     "module": true,
@@ -10,12 +31,12 @@ const client_manifest = {
       "node_modules/nuxt/dist/app/entry.js"
     ]
   },
-  "_ConsultationForm.BkuvJp5y.css": {
+  "_ConsultationForm.BWbmS2Gx.css": {
     "resourceType": "style",
     "prefetch": true,
     "preload": true,
-    "file": "ConsultationForm.BkuvJp5y.css",
-    "src": "_ConsultationForm.BkuvJp5y.css"
+    "file": "ConsultationForm.BWbmS2Gx.css",
+    "src": "_ConsultationForm.BWbmS2Gx.css"
   },
   "_DlAUqK2U.js": {
     "resourceType": "script",
@@ -24,27 +45,6 @@ const client_manifest = {
     "preload": true,
     "file": "DlAUqK2U.js",
     "name": "_plugin-vue_export-helper"
-  },
-  "_g8OKfVtg.js": {
-    "resourceType": "script",
-    "module": true,
-    "prefetch": true,
-    "preload": true,
-    "file": "g8OKfVtg.js",
-    "name": "ConsultationForm",
-    "imports": [
-      "node_modules/nuxt/dist/app/entry.js",
-      "_DlAUqK2U.js"
-    ],
-    "css": [
-      "ConsultationForm.BkuvJp5y.css"
-    ]
-  },
-  "ConsultationForm.BkuvJp5y.css": {
-    "file": "ConsultationForm.BkuvJp5y.css",
-    "resourceType": "style",
-    "prefetch": true,
-    "preload": true
   },
   "node_modules/.cache/nuxt-google-fonts/fonts/Inter-normal-400-cyrillic-ext.woff2": {
     "resourceType": "font",
@@ -266,7 +266,7 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "DdDDoJVS.js",
+    "file": "DUTdlXMq.js",
     "name": "entry",
     "src": "node_modules/nuxt/dist/app/entry.js",
     "isEntry": true,
@@ -379,7 +379,7 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "BB4tpcBY.js",
+    "file": "uVyxv2HZ.js",
     "name": "contacts",
     "src": "pages/contacts.vue",
     "isDynamicEntry": true,
@@ -388,11 +388,11 @@ const client_manifest = {
       "_DlAUqK2U.js"
     ],
     "css": [
-      "contacts.DOFF06zy.css"
+      "contacts.DiuJJ7i2.css"
     ]
   },
-  "contacts.DOFF06zy.css": {
-    "file": "contacts.DOFF06zy.css",
+  "contacts.DiuJJ7i2.css": {
+    "file": "contacts.DiuJJ7i2.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true
@@ -402,22 +402,22 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "tggd_lXi.js",
+    "file": "BoNE-heO.js",
     "name": "index",
     "src": "pages/index.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_g8OKfVtg.js",
+      "_8W_jNeGf.js",
       "node_modules/nuxt/dist/app/entry.js",
       "_DlAUqK2U.js",
       "_CRx-DrO-.js"
     ],
     "css": [
-      "index.Bjf-ocPg.css"
+      "index.CRaS7Ef5.css"
     ]
   },
-  "index.Bjf-ocPg.css": {
-    "file": "index.Bjf-ocPg.css",
+  "index.CRaS7Ef5.css": {
+    "file": "index.CRaS7Ef5.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true
@@ -427,21 +427,21 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "UTfEai6M.js",
+    "file": "DzJiuSul.js",
     "name": "services",
     "src": "pages/services.vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_g8OKfVtg.js",
+      "_8W_jNeGf.js",
       "_DlAUqK2U.js"
     ],
     "css": [
-      "services.DEQ5Z1FO.css"
+      "services.DItD-2GK.css"
     ]
   },
-  "services.DEQ5Z1FO.css": {
-    "file": "services.DEQ5Z1FO.css",
+  "services.DItD-2GK.css": {
+    "file": "services.DItD-2GK.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true

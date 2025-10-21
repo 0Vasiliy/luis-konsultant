@@ -76,13 +76,14 @@
       <div class="map-section">
         <h2>Как нас найти</h2>
         <div class="map-container">
-          <iframe 
-            src="https://yandex.ru/map-widget/v1/?um=constructor%3A1234567890abcdef&amp;source=constructor" 
-            width="100%" 
-            height="400" 
+          <iframe
+           src="https://yandex.ru/map-widget/v1/?um=mymaps%3AHWgd-G9GHLOD4Svwpib5R8yi6wDrHAuW&amp;source=constructor"
+            width="100%"
+            height="450"
             frameborder="0"
             title="Карта офиса Luis Konsultant"
-          ></iframe>
+            >
+          </iframe>
         </div>
         <div class="map-info">
           <p><strong>Ближайшее метро:</strong> Тверская, Пушкинская (5 минут пешком)</p>
