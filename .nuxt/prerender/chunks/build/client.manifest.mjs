@@ -266,7 +266,7 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "DUTdlXMq.js",
+    "file": "fMwZh-CR.js",
     "name": "entry",
     "src": "node_modules/nuxt/dist/app/entry.js",
     "isEntry": true,
@@ -379,7 +379,7 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "uVyxv2HZ.js",
+    "file": "DwBhSzN5.js",
     "name": "contacts",
     "src": "pages/contacts.vue",
     "isDynamicEntry": true,
@@ -388,11 +388,11 @@ const client_manifest = {
       "_DlAUqK2U.js"
     ],
     "css": [
-      "contacts.DiuJJ7i2.css"
+      "contacts.IKUl2Gw7.css"
     ]
   },
-  "contacts.DiuJJ7i2.css": {
-    "file": "contacts.DiuJJ7i2.css",
+  "contacts.IKUl2Gw7.css": {
+    "file": "contacts.IKUl2Gw7.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true

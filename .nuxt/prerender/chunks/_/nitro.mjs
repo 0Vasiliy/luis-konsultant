@@ -607,7 +607,7 @@ function _expandFromEnv(value) {
 const _inlineRuntimeConfig = {
   "app": {
     "baseURL": "/luis-konsultant/",
-    "buildId": "bfa2a4c1-30aa-4728-84c3-90af09ec1f14",
+    "buildId": "52ae956a-6973-402a-8f57-45892bde5115",
     "buildAssetsDir": "assets/",
     "cdnURL": ""
   },

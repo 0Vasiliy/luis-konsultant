@@ -109,7 +109,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, watch } from 'vue';
+import { ref, watch, nextTick } from 'vue';
 
 const props = defineProps<{
   isVisible: boolean;
@@ -138,6 +138,32 @@ const isSubmitting = ref(false);
 watch(() => props.preselectedService, (newService) => {
   if (newService) {
     form.value.service = newService;
+  }
+});
+
+// Автоматическая прокрутка при открытии модального окна
+watch(() => props.isVisible, (isVisible) => {
+  if (isVisible) {
+    nextTick(() => {
+      const modal = document.querySelector('.consultation-form-modal');
+      if (modal) {
+        const modalTop = modal.getBoundingClientRect().top;
+        const scrollY = window.scrollY;
+        
+        // Если модальное окно находится выше видимой области
+        if (scrollY > 0) {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        
+        // Также устанавливаем фокус на первое поле
+        const firstInput = modal.querySelector('input');
+        if (firstInput) {
+          setTimeout(() => {
+            firstInput.focus();
+          }, 300);
+        }
+      }
+    });
   }
 });
 

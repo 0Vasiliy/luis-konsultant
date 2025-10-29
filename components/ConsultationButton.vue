@@ -60,14 +60,6 @@ const handleFormSubmitted = (data: any) => {
   transition: all 0.3s ease;
 }
 
-.consultation-button:hover {
-  box-shadow: 0px 3px 12px 0px rgba(115, 115, 115, 0.15);
-}
-
-.consultation-button:active {
-  box-shadow: 0px 1px 8px 0px rgba(115, 115, 115, 0.1);
-}
-
 .button-text {
   flex-shrink: 0;
 }

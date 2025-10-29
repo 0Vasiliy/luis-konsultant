@@ -104,9 +104,6 @@
                 <span class="price-label">Стоимость:</span>
                 <span class="price-value">{{ service.pricing }}</span>
               </div>
-              <button class="consultation-btn" @click.stop="requestConsultation(service)">
-                Заказать консультацию
-              </button>
             </div>
           </div>
         </div>
@@ -123,6 +120,14 @@
       </div>
     </div>
     
+    <!-- Одна кнопка консультации -->
+    <button class="single-consultation-btn" @click="requestGeneralConsultation">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span>Заказать консультацию</span>
+    </button>
+
     <!-- Форма консультации -->
     <ConsultationForm 
       :is-visible="showConsultationForm"
@@ -306,6 +311,17 @@ const setActiveService = (index: number) => {
 const requestConsultation = (service: any) => {
   selectedService.value = service.title.toLowerCase().replace(' ', '-');
   showConsultationForm.value = true;
+};
+
+const requestGeneralConsultation = () => {
+  selectedService.value = '';
+  showConsultationForm.value = true;
+  // Scroll to top when modal opens if needed
+  setTimeout(() => {
+    if (window.scrollY > 0) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  }, 100);
 };
 
 const goBack = () => {
@@ -753,6 +769,52 @@ const handleFormSubmitted = (data: any) => {
   box-shadow: 0 10px 30px rgba(20, 184, 166, 0.3);
 }
 
+.single-consultation-btn {
+  position: fixed;
+  bottom: 5rem;
+  right: 2rem;
+  background: linear-gradient(135deg, #14b8a6, #0d9488);
+  color: white;
+  border: none;
+  padding: 1.2rem 2rem;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  box-shadow: 0 10px 40px rgba(20, 184, 166, 0.4);
+  z-index: 100;
+  animation: slideInUp 0.6s ease-out 1s both;
+}
+
+.single-consultation-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 50px rgba(20, 184, 166, 0.5);
+}
+
+.single-consultation-btn:active {
+  transform: translateY(-2px);
+}
+
+.single-consultation-btn svg {
+  width: 24px;
+  height: 24px;
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .navigation-dots {
   position: fixed;
   bottom: 2rem;
@@ -807,6 +869,18 @@ const handleFormSubmitted = (data: any) => {
     flex-direction: column;
     gap: 1rem;
     text-align: center;
+  }
+  
+  .single-consultation-btn {
+    right: 1rem;
+    bottom: 4.5rem;
+    padding: 1rem 1.5rem;
+    font-size: 0.95rem;
+  }
+  
+  .single-consultation-btn svg {
+    width: 20px;
+    height: 20px;
   }
 }
 </style>
