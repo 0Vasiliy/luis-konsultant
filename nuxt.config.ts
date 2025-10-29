@@ -38,10 +38,29 @@ export default defineNuxtConfig({
         ? 'http://localhost:3000/api'
         : '/api',
       baseURL: process.env.NODE_ENV === 'production' ? '/luis-konsultant/' : '/',
-      // imagesPath: process.env.NODE_ENV === 'production' ? '/luis-konsultant/images/' : '/images/'
+      imagesPath: process.env.NODE_ENV === 'production' ? '/luis-konsultant/images/' : '/images/'
     }
   },
   vite: {
-      base: process.env.NODE_ENV === 'production' ? '/luis-konsultant/' : '/',
-  }
+    build: {
+      rollupOptions: {
+        output: {
+          assetFileNames: (assetInfo) => {
+            if (assetInfo.name) {
+              if (/\.(gif|jpe?g|png|svg)$/.test(assetInfo.name)) {
+                return `images/[name][extname]`
+              }
+              if (/\.css$/.test(assetInfo.name)) {
+                return `css/[name][extname]`
+              }
+              if (/\.js$/.test(assetInfo.name)) {
+                return `js/[name][extname]`
+              }
+            }
+            return `assets/[name][extname]`
+          }
+        }
+      }
+    }
+  },
 })
