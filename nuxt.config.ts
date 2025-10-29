@@ -38,6 +38,7 @@ export default defineNuxtConfig({
         ? 'http://localhost:3000/api'
         : '/api',
       baseURL: process.env.NODE_ENV === 'production' ? '/luis-konsultant/' : '/',
+      imagesPath: process.env.NODE_ENV === 'production' ? '/luis-konsultant/images/' : '/images/'
     }
   },
 
