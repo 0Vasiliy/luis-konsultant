@@ -112,8 +112,12 @@ useHead({
     { name: 'description', content: 'Реальные проекты и достигнутые результаты в области бизнес-аналитики, аутсорсинга, систематизации бизнеса и найма персонала' }
   ]
 });
-
+const config = useRuntimeConfig();
 const activeCase = ref(0);
+
+const getImagePath = (imageName: string) => {
+  return `${config.public.baseURL || ''}${imageName}`;
+};
 
 const cases = ref([
   {
@@ -121,7 +125,8 @@ const cases = ref([
     title: 'Оптимизация бизнес-процессов в IT-компании',
     category: 'Бизнес-аналитика',
     duration: '3 месяца',
-    image: '~/assets/images/cases/case-1.jpg',
+    // image: '/images/cases/case-1.jpg',
+    image: getImagePath('images/cases/case-1.jpg'),
     description: 'Комплексный анализ и оптимизация бизнес-процессов в быстрорастущей IT-компании с 200+ сотрудниками.',
     challenge: 'Компания столкнулась с проблемами масштабирования: снижение эффективности процессов, дублирование функций, отсутствие единой системы управления проектами.',
     solution: [
@@ -144,7 +149,8 @@ const cases = ref([
     title: 'Аутсорсинг HR-функций для производственной компании',
     category: 'Аутсорсинг',
     duration: '6 месяцев',
-    image: './images/cases/case-2.jpg',
+    // image: '/images/cases/case-2.jpg',
+    image: getImagePath('images/cases/case-2.jpg'),
     description: 'Полный аутсорсинг HR-функций для производственной компании с 500+ сотрудниками.',
     challenge: 'Компания нуждалась в профессиональном управлении персоналом, но не имела ресурсов для создания собственного HR-отдела.',
     solution: [
@@ -167,7 +173,8 @@ const cases = ref([
     title: 'Систематизация бизнеса в сфере услуг',
     category: 'Систематизация бизнеса',
     duration: '4 месяца',
-    image: '/assets/images/cases/case-3.jpg',
+    // image: '/images/cases/case-3.jpg',
+     image: getImagePath('images/cases/case-3.jpg'),
     description: 'Комплексная систематизация бизнес-процессов в компании, предоставляющей консалтинговые услуги.',
     challenge: 'Компания работала в хаотичном режиме: отсутствовали стандарты, документооборот был неорганизован, клиенты получали разный уровень сервиса.',
     solution: [
@@ -190,7 +197,8 @@ const cases = ref([
     title: 'Найм ключевых специалистов для стартапа',
     category: 'Найм персонала',
     duration: '2 месяца',
-    image: '/images/cases/case-4.jpg',
+    // image: '/images/cases/case-4.jpg',
+    image: getImagePath('images/cases/case-4.jpg'),
     description: 'Поиск и привлечение ключевых специалистов для технологического стартапа на ранней стадии развития.',
     challenge: 'Стартапу требовались опытные разработчики и менеджеры, но ограниченный бюджет и отсутствие репутации затрудняли поиск талантов.',
     solution: [
