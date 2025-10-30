@@ -670,6 +670,9 @@ onMounted(() => {
     font-size: 2.5rem;
   }
   
+  .case-tags{
+    justify-content: center;
+  }
   .case-card {
     margin-bottom: 2rem;
   }
@@ -685,8 +688,8 @@ onMounted(() => {
     font-size: 0.9rem;
   }
   
-  .results-grid {
+  /* .results-grid {
     grid-template-columns: repeat(2, 1fr);
-  }
+  } */
 }
 </style>
