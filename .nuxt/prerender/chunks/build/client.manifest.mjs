@@ -1,4 +1,25 @@
 const client_manifest = {
+  "_BcC9sM4C.js": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "BcC9sM4C.js",
+    "name": "ConsultationForm",
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.js",
+      "_DlAUqK2U.js"
+    ],
+    "css": [
+      "ConsultationForm.CJv_8Tmh.css"
+    ]
+  },
+  "ConsultationForm.CJv_8Tmh.css": {
+    "file": "ConsultationForm.CJv_8Tmh.css",
+    "resourceType": "style",
+    "prefetch": true,
+    "preload": true
+  },
   "_CRx-DrO-.js": {
     "resourceType": "script",
     "module": true,
@@ -10,33 +31,12 @@ const client_manifest = {
       "node_modules/nuxt/dist/app/entry.js"
     ]
   },
-  "_CS7Z0u7p.js": {
-    "resourceType": "script",
-    "module": true,
-    "prefetch": true,
-    "preload": true,
-    "file": "CS7Z0u7p.js",
-    "name": "ConsultationForm",
-    "imports": [
-      "node_modules/nuxt/dist/app/entry.js",
-      "_DlAUqK2U.js"
-    ],
-    "css": [
-      "css/ConsultationForm.css"
-    ]
-  },
-  "css/ConsultationForm.css": {
-    "file": "css/ConsultationForm.css",
-    "resourceType": "style",
-    "prefetch": true,
-    "preload": true
-  },
-  "_ConsultationForm.css": {
+  "_ConsultationForm.CJv_8Tmh.css": {
     "resourceType": "style",
     "prefetch": true,
     "preload": true,
-    "file": "css/ConsultationForm.css",
-    "src": "_ConsultationForm.css"
+    "file": "ConsultationForm.CJv_8Tmh.css",
+    "src": "_ConsultationForm.CJv_8Tmh.css"
   },
   "_DlAUqK2U.js": {
     "resourceType": "script",
@@ -49,169 +49,169 @@ const client_manifest = {
   "node_modules/.cache/nuxt-google-fonts/fonts/Inter-normal-400-cyrillic-ext.woff2": {
     "resourceType": "font",
     "mimeType": "font/woff2",
-    "file": "Inter-normal-400-cyrillic-ext.woff2",
+    "file": "Inter-normal-400-cyrillic-ext.BOeWTOD4.woff2",
     "src": "node_modules/.cache/nuxt-google-fonts/fonts/Inter-normal-400-cyrillic-ext.woff2"
   },
   "node_modules/.cache/nuxt-google-fonts/fonts/Inter-normal-400-cyrillic.woff2": {
     "resourceType": "font",
     "mimeType": "font/woff2",
-    "file": "Inter-normal-400-cyrillic.woff2",
+    "file": "Inter-normal-400-cyrillic.DqGufNeO.woff2",
     "src": "node_modules/.cache/nuxt-google-fonts/fonts/Inter-normal-400-cyrillic.woff2"
   },
   "node_modules/.cache/nuxt-google-fonts/fonts/Inter-normal-400-greek-ext.woff2": {
     "resourceType": "font",
     "mimeType": "font/woff2",
-    "file": "Inter-normal-400-greek-ext.woff2",
+    "file": "Inter-normal-400-greek-ext.DlzME5K_.woff2",
     "src": "node_modules/.cache/nuxt-google-fonts/fonts/Inter-normal-400-greek-ext.woff2"
   },
   "node_modules/.cache/nuxt-google-fonts/fonts/Inter-normal-400-greek.woff2": {
     "resourceType": "font",
     "mimeType": "font/woff2",
-    "file": "Inter-normal-400-greek.woff2",
+    "file": "Inter-normal-400-greek.CkhJZR-_.woff2",
     "src": "node_modules/.cache/nuxt-google-fonts/fonts/Inter-normal-400-greek.woff2"
   },
   "node_modules/.cache/nuxt-google-fonts/fonts/Inter-normal-400-latin-ext.woff2": {
     "resourceType": "font",
     "mimeType": "font/woff2",
-    "file": "Inter-normal-400-latin-ext.woff2",
+    "file": "Inter-normal-400-latin-ext.DO1Apj_S.woff2",
     "src": "node_modules/.cache/nuxt-google-fonts/fonts/Inter-normal-400-latin-ext.woff2"
   },
   "node_modules/.cache/nuxt-google-fonts/fonts/Inter-normal-400-latin.woff2": {
     "resourceType": "font",
     "mimeType": "font/woff2",
-    "file": "Inter-normal-400-latin.woff2",
+    "file": "Inter-normal-400-latin.Dx4kXJAl.woff2",
     "src": "node_modules/.cache/nuxt-google-fonts/fonts/Inter-normal-400-latin.woff2"
   },
   "node_modules/.cache/nuxt-google-fonts/fonts/Inter-normal-400-vietnamese.woff2": {
     "resourceType": "font",
     "mimeType": "font/woff2",
-    "file": "Inter-normal-400-vietnamese.woff2",
+    "file": "Inter-normal-400-vietnamese.CBcvBZtf.woff2",
     "src": "node_modules/.cache/nuxt-google-fonts/fonts/Inter-normal-400-vietnamese.woff2"
   },
   "node_modules/.cache/nuxt-google-fonts/fonts/Inter-normal-500-cyrillic-ext.woff2": {
     "resourceType": "font",
     "mimeType": "font/woff2",
-    "file": "Inter-normal-400-cyrillic-ext.woff2",
+    "file": "Inter-normal-400-cyrillic-ext.BOeWTOD4.woff2",
     "src": "node_modules/.cache/nuxt-google-fonts/fonts/Inter-normal-400-cyrillic-ext.woff2"
   },
   "node_modules/.cache/nuxt-google-fonts/fonts/Inter-normal-500-cyrillic.woff2": {
     "resourceType": "font",
     "mimeType": "font/woff2",
-    "file": "Inter-normal-400-cyrillic.woff2",
+    "file": "Inter-normal-400-cyrillic.DqGufNeO.woff2",
     "src": "node_modules/.cache/nuxt-google-fonts/fonts/Inter-normal-400-cyrillic.woff2"
   },
   "node_modules/.cache/nuxt-google-fonts/fonts/Inter-normal-500-greek-ext.woff2": {
     "resourceType": "font",
     "mimeType": "font/woff2",
-    "file": "Inter-normal-400-greek-ext.woff2",
+    "file": "Inter-normal-400-greek-ext.DlzME5K_.woff2",
     "src": "node_modules/.cache/nuxt-google-fonts/fonts/Inter-normal-400-greek-ext.woff2"
   },
   "node_modules/.cache/nuxt-google-fonts/fonts/Inter-normal-500-greek.woff2": {
     "resourceType": "font",
     "mimeType": "font/woff2",
-    "file": "Inter-normal-400-greek.woff2",
+    "file": "Inter-normal-400-greek.CkhJZR-_.woff2",
     "src": "node_modules/.cache/nuxt-google-fonts/fonts/Inter-normal-400-greek.woff2"
   },
   "node_modules/.cache/nuxt-google-fonts/fonts/Inter-normal-500-latin-ext.woff2": {
     "resourceType": "font",
     "mimeType": "font/woff2",
-    "file": "Inter-normal-400-latin-ext.woff2",
+    "file": "Inter-normal-400-latin-ext.DO1Apj_S.woff2",
     "src": "node_modules/.cache/nuxt-google-fonts/fonts/Inter-normal-400-latin-ext.woff2"
   },
   "node_modules/.cache/nuxt-google-fonts/fonts/Inter-normal-500-latin.woff2": {
     "resourceType": "font",
     "mimeType": "font/woff2",
-    "file": "Inter-normal-400-latin.woff2",
+    "file": "Inter-normal-400-latin.Dx4kXJAl.woff2",
     "src": "node_modules/.cache/nuxt-google-fonts/fonts/Inter-normal-400-latin.woff2"
   },
   "node_modules/.cache/nuxt-google-fonts/fonts/Inter-normal-500-vietnamese.woff2": {
     "resourceType": "font",
     "mimeType": "font/woff2",
-    "file": "Inter-normal-400-vietnamese.woff2",
+    "file": "Inter-normal-400-vietnamese.CBcvBZtf.woff2",
     "src": "node_modules/.cache/nuxt-google-fonts/fonts/Inter-normal-400-vietnamese.woff2"
   },
   "node_modules/.cache/nuxt-google-fonts/fonts/Inter-normal-600-cyrillic-ext.woff2": {
     "resourceType": "font",
     "mimeType": "font/woff2",
-    "file": "Inter-normal-400-cyrillic-ext.woff2",
+    "file": "Inter-normal-400-cyrillic-ext.BOeWTOD4.woff2",
     "src": "node_modules/.cache/nuxt-google-fonts/fonts/Inter-normal-400-cyrillic-ext.woff2"
   },
   "node_modules/.cache/nuxt-google-fonts/fonts/Inter-normal-600-cyrillic.woff2": {
     "resourceType": "font",
     "mimeType": "font/woff2",
-    "file": "Inter-normal-400-cyrillic.woff2",
+    "file": "Inter-normal-400-cyrillic.DqGufNeO.woff2",
     "src": "node_modules/.cache/nuxt-google-fonts/fonts/Inter-normal-400-cyrillic.woff2"
   },
   "node_modules/.cache/nuxt-google-fonts/fonts/Inter-normal-600-greek-ext.woff2": {
     "resourceType": "font",
     "mimeType": "font/woff2",
-    "file": "Inter-normal-400-greek-ext.woff2",
+    "file": "Inter-normal-400-greek-ext.DlzME5K_.woff2",
     "src": "node_modules/.cache/nuxt-google-fonts/fonts/Inter-normal-400-greek-ext.woff2"
   },
   "node_modules/.cache/nuxt-google-fonts/fonts/Inter-normal-600-greek.woff2": {
     "resourceType": "font",
     "mimeType": "font/woff2",
-    "file": "Inter-normal-400-greek.woff2",
+    "file": "Inter-normal-400-greek.CkhJZR-_.woff2",
     "src": "node_modules/.cache/nuxt-google-fonts/fonts/Inter-normal-400-greek.woff2"
   },
   "node_modules/.cache/nuxt-google-fonts/fonts/Inter-normal-600-latin-ext.woff2": {
     "resourceType": "font",
     "mimeType": "font/woff2",
-    "file": "Inter-normal-400-latin-ext.woff2",
+    "file": "Inter-normal-400-latin-ext.DO1Apj_S.woff2",
     "src": "node_modules/.cache/nuxt-google-fonts/fonts/Inter-normal-400-latin-ext.woff2"
   },
   "node_modules/.cache/nuxt-google-fonts/fonts/Inter-normal-600-latin.woff2": {
     "resourceType": "font",
     "mimeType": "font/woff2",
-    "file": "Inter-normal-400-latin.woff2",
+    "file": "Inter-normal-400-latin.Dx4kXJAl.woff2",
     "src": "node_modules/.cache/nuxt-google-fonts/fonts/Inter-normal-400-latin.woff2"
   },
   "node_modules/.cache/nuxt-google-fonts/fonts/Inter-normal-600-vietnamese.woff2": {
     "resourceType": "font",
     "mimeType": "font/woff2",
-    "file": "Inter-normal-400-vietnamese.woff2",
+    "file": "Inter-normal-400-vietnamese.CBcvBZtf.woff2",
     "src": "node_modules/.cache/nuxt-google-fonts/fonts/Inter-normal-400-vietnamese.woff2"
   },
   "node_modules/.cache/nuxt-google-fonts/fonts/Inter-normal-700-cyrillic-ext.woff2": {
     "resourceType": "font",
     "mimeType": "font/woff2",
-    "file": "Inter-normal-400-cyrillic-ext.woff2",
+    "file": "Inter-normal-400-cyrillic-ext.BOeWTOD4.woff2",
     "src": "node_modules/.cache/nuxt-google-fonts/fonts/Inter-normal-400-cyrillic-ext.woff2"
   },
   "node_modules/.cache/nuxt-google-fonts/fonts/Inter-normal-700-cyrillic.woff2": {
     "resourceType": "font",
     "mimeType": "font/woff2",
-    "file": "Inter-normal-400-cyrillic.woff2",
+    "file": "Inter-normal-400-cyrillic.DqGufNeO.woff2",
     "src": "node_modules/.cache/nuxt-google-fonts/fonts/Inter-normal-400-cyrillic.woff2"
   },
   "node_modules/.cache/nuxt-google-fonts/fonts/Inter-normal-700-greek-ext.woff2": {
     "resourceType": "font",
     "mimeType": "font/woff2",
-    "file": "Inter-normal-400-greek-ext.woff2",
+    "file": "Inter-normal-400-greek-ext.DlzME5K_.woff2",
     "src": "node_modules/.cache/nuxt-google-fonts/fonts/Inter-normal-400-greek-ext.woff2"
   },
   "node_modules/.cache/nuxt-google-fonts/fonts/Inter-normal-700-greek.woff2": {
     "resourceType": "font",
     "mimeType": "font/woff2",
-    "file": "Inter-normal-400-greek.woff2",
+    "file": "Inter-normal-400-greek.CkhJZR-_.woff2",
     "src": "node_modules/.cache/nuxt-google-fonts/fonts/Inter-normal-400-greek.woff2"
   },
   "node_modules/.cache/nuxt-google-fonts/fonts/Inter-normal-700-latin-ext.woff2": {
     "resourceType": "font",
     "mimeType": "font/woff2",
-    "file": "Inter-normal-400-latin-ext.woff2",
+    "file": "Inter-normal-400-latin-ext.DO1Apj_S.woff2",
     "src": "node_modules/.cache/nuxt-google-fonts/fonts/Inter-normal-400-latin-ext.woff2"
   },
   "node_modules/.cache/nuxt-google-fonts/fonts/Inter-normal-700-latin.woff2": {
     "resourceType": "font",
     "mimeType": "font/woff2",
-    "file": "Inter-normal-400-latin.woff2",
+    "file": "Inter-normal-400-latin.Dx4kXJAl.woff2",
     "src": "node_modules/.cache/nuxt-google-fonts/fonts/Inter-normal-400-latin.woff2"
   },
   "node_modules/.cache/nuxt-google-fonts/fonts/Inter-normal-700-vietnamese.woff2": {
     "resourceType": "font",
     "mimeType": "font/woff2",
-    "file": "Inter-normal-400-vietnamese.woff2",
+    "file": "Inter-normal-400-vietnamese.CBcvBZtf.woff2",
     "src": "node_modules/.cache/nuxt-google-fonts/fonts/Inter-normal-400-vietnamese.woff2"
   },
   "node_modules/nuxt/dist/app/components/error-404.vue": {
@@ -219,7 +219,7 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "CLhg4v_6.js",
+    "file": "C8Eye3oE.js",
     "name": "error-404",
     "src": "node_modules/nuxt/dist/app/components/error-404.vue",
     "isDynamicEntry": true,
@@ -229,11 +229,11 @@ const client_manifest = {
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "css": [
-      "css/error-404.css"
+      "error-404.DqZyKpgk.css"
     ]
   },
-  "css/error-404.css": {
-    "file": "css/error-404.css",
+  "error-404.DqZyKpgk.css": {
+    "file": "error-404.DqZyKpgk.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true
@@ -243,7 +243,7 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "2smtv6Io.js",
+    "file": "DqAm8BmV.js",
     "name": "error-500",
     "src": "node_modules/nuxt/dist/app/components/error-500.vue",
     "isDynamicEntry": true,
@@ -252,11 +252,11 @@ const client_manifest = {
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "css": [
-      "css/error-500.css"
+      "error-500.CZqNkBuR.css"
     ]
   },
-  "css/error-500.css": {
-    "file": "css/error-500.css",
+  "error-500.CZqNkBuR.css": {
+    "file": "error-500.CZqNkBuR.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true
@@ -266,7 +266,7 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "L8u8EPF4.js",
+    "file": "ClKxtgbE.js",
     "name": "entry",
     "src": "node_modules/nuxt/dist/app/entry.js",
     "isEntry": true,
@@ -275,56 +275,56 @@ const client_manifest = {
       "node_modules/nuxt/dist/app/components/error-500.vue"
     ],
     "css": [
-      "css/entry.css"
+      "entry.Bvd1YtJa.css"
     ],
     "assets": [
-      "Inter-normal-400-cyrillic-ext.woff2",
-      "Inter-normal-400-cyrillic.woff2",
-      "Inter-normal-400-greek-ext.woff2",
-      "Inter-normal-400-greek.woff2",
-      "Inter-normal-400-vietnamese.woff2",
-      "Inter-normal-400-latin-ext.woff2",
-      "Inter-normal-400-latin.woff2"
+      "Inter-normal-400-cyrillic-ext.BOeWTOD4.woff2",
+      "Inter-normal-400-cyrillic.DqGufNeO.woff2",
+      "Inter-normal-400-greek-ext.DlzME5K_.woff2",
+      "Inter-normal-400-greek.CkhJZR-_.woff2",
+      "Inter-normal-400-vietnamese.CBcvBZtf.woff2",
+      "Inter-normal-400-latin-ext.DO1Apj_S.woff2",
+      "Inter-normal-400-latin.Dx4kXJAl.woff2"
     ]
   },
-  "css/entry.css": {
-    "file": "css/entry.css",
+  "entry.Bvd1YtJa.css": {
+    "file": "entry.Bvd1YtJa.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true
   },
-  "Inter-normal-400-cyrillic-ext.woff2": {
-    "file": "Inter-normal-400-cyrillic-ext.woff2",
+  "Inter-normal-400-cyrillic-ext.BOeWTOD4.woff2": {
+    "file": "Inter-normal-400-cyrillic-ext.BOeWTOD4.woff2",
     "resourceType": "font",
     "mimeType": "font/woff2"
   },
-  "Inter-normal-400-cyrillic.woff2": {
-    "file": "Inter-normal-400-cyrillic.woff2",
+  "Inter-normal-400-cyrillic.DqGufNeO.woff2": {
+    "file": "Inter-normal-400-cyrillic.DqGufNeO.woff2",
     "resourceType": "font",
     "mimeType": "font/woff2"
   },
-  "Inter-normal-400-greek-ext.woff2": {
-    "file": "Inter-normal-400-greek-ext.woff2",
+  "Inter-normal-400-greek-ext.DlzME5K_.woff2": {
+    "file": "Inter-normal-400-greek-ext.DlzME5K_.woff2",
     "resourceType": "font",
     "mimeType": "font/woff2"
   },
-  "Inter-normal-400-greek.woff2": {
-    "file": "Inter-normal-400-greek.woff2",
+  "Inter-normal-400-greek.CkhJZR-_.woff2": {
+    "file": "Inter-normal-400-greek.CkhJZR-_.woff2",
     "resourceType": "font",
     "mimeType": "font/woff2"
   },
-  "Inter-normal-400-vietnamese.woff2": {
-    "file": "Inter-normal-400-vietnamese.woff2",
+  "Inter-normal-400-vietnamese.CBcvBZtf.woff2": {
+    "file": "Inter-normal-400-vietnamese.CBcvBZtf.woff2",
     "resourceType": "font",
     "mimeType": "font/woff2"
   },
-  "Inter-normal-400-latin-ext.woff2": {
-    "file": "Inter-normal-400-latin-ext.woff2",
+  "Inter-normal-400-latin-ext.DO1Apj_S.woff2": {
+    "file": "Inter-normal-400-latin-ext.DO1Apj_S.woff2",
     "resourceType": "font",
     "mimeType": "font/woff2"
   },
-  "Inter-normal-400-latin.woff2": {
-    "file": "Inter-normal-400-latin.woff2",
+  "Inter-normal-400-latin.Dx4kXJAl.woff2": {
+    "file": "Inter-normal-400-latin.Dx4kXJAl.woff2",
     "resourceType": "font",
     "mimeType": "font/woff2"
   },
@@ -333,7 +333,7 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "DQI1yp03.js",
+    "file": "Ci9-qa-B.js",
     "name": "biography",
     "src": "pages/biography.vue",
     "isDynamicEntry": true,
@@ -342,11 +342,11 @@ const client_manifest = {
       "_DlAUqK2U.js"
     ],
     "css": [
-      "css/biography.css"
+      "biography.S_hWV6Rg.css"
     ]
   },
-  "css/biography.css": {
-    "file": "css/biography.css",
+  "biography.S_hWV6Rg.css": {
+    "file": "biography.S_hWV6Rg.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true
@@ -356,7 +356,7 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "DnX_Bck_.js",
+    "file": "D6pNJrMm.js",
     "name": "cases",
     "src": "pages/cases.vue",
     "isDynamicEntry": true,
@@ -365,11 +365,11 @@ const client_manifest = {
       "_DlAUqK2U.js"
     ],
     "css": [
-      "css/cases.css"
+      "cases.u6C42oYn.css"
     ]
   },
-  "css/cases.css": {
-    "file": "css/cases.css",
+  "cases.u6C42oYn.css": {
+    "file": "cases.u6C42oYn.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true
@@ -379,7 +379,7 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "D7AeqfjE.js",
+    "file": "DwBhSzN5.js",
     "name": "contacts",
     "src": "pages/contacts.vue",
     "isDynamicEntry": true,
@@ -388,11 +388,11 @@ const client_manifest = {
       "_DlAUqK2U.js"
     ],
     "css": [
-      "css/contacts.css"
+      "contacts.IKUl2Gw7.css"
     ]
   },
-  "css/contacts.css": {
-    "file": "css/contacts.css",
+  "contacts.IKUl2Gw7.css": {
+    "file": "contacts.IKUl2Gw7.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true
@@ -402,22 +402,22 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "DI_hW1ZG.js",
+    "file": "D0tHlJ8l.js",
     "name": "index",
     "src": "pages/index.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_CS7Z0u7p.js",
+      "_BcC9sM4C.js",
       "node_modules/nuxt/dist/app/entry.js",
       "_DlAUqK2U.js",
       "_CRx-DrO-.js"
     ],
     "css": [
-      "css/index.css"
+      "index.B8-8KSm-.css"
     ]
   },
-  "css/index.css": {
-    "file": "css/index.css",
+  "index.B8-8KSm-.css": {
+    "file": "index.B8-8KSm-.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true
@@ -427,21 +427,21 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "DsCljJdZ.js",
+    "file": "Dc7a_TYh.js",
     "name": "services",
     "src": "pages/services.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_CS7Z0u7p.js",
+      "_BcC9sM4C.js",
       "node_modules/nuxt/dist/app/entry.js",
       "_DlAUqK2U.js"
     ],
     "css": [
-      "css/services.css"
+      "services.D7hHk1Mx.css"
     ]
   },
-  "css/services.css": {
-    "file": "css/services.css",
+  "services.D7hHk1Mx.css": {
+    "file": "services.D7hHk1Mx.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true
@@ -451,7 +451,7 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "B_HbSwXH.js",
+    "file": "B5lh3Wdo.js",
     "name": "sticker",
     "src": "pages/sticker.vue",
     "isDynamicEntry": true,
@@ -461,11 +461,11 @@ const client_manifest = {
       "_DlAUqK2U.js"
     ],
     "css": [
-      "css/sticker.css"
+      "sticker.zNEnoepN.css"
     ]
   },
-  "css/sticker.css": {
-    "file": "css/sticker.css",
+  "sticker.zNEnoepN.css": {
+    "file": "sticker.zNEnoepN.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true

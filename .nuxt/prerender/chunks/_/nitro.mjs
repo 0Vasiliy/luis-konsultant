@@ -607,7 +607,7 @@ function _expandFromEnv(value) {
 const _inlineRuntimeConfig = {
   "app": {
     "baseURL": "/luis-konsultant/",
-    "buildId": "d2413bdd-a5ac-4229-9f71-81901d08edfa",
+    "buildId": "4b14d98d-b5ed-4014-b71f-7eb6a05783c2",
     "buildAssetsDir": "assets/",
     "cdnURL": ""
   },
@@ -636,8 +636,7 @@ const _inlineRuntimeConfig = {
   },
   "public": {
     "apiBase": "/api",
-    "baseURL": "/luis-konsultant/",
-    "imagesPath": "/luis-konsultant/images/"
+    "baseURL": "/luis-konsultant/"
   }
 };
 const envOptions = {

@@ -115,8 +115,6 @@ declare module 'nuxt/schema' {
    apiBase: string,
 
    baseURL: string,
-
-   imagesPath: string,
   }
 }
 declare module 'vue' {
