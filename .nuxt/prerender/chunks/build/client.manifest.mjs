@@ -266,7 +266,7 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "RQxL2biQ.js",
+    "file": "FtU-GCdy.js",
     "name": "entry",
     "src": "node_modules/nuxt/dist/app/entry.js",
     "isEntry": true,
@@ -356,7 +356,7 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "DBTHae7r.js",
+    "file": "hO2TqobL.js",
     "name": "cases",
     "src": "pages/cases.vue",
     "isDynamicEntry": true,
@@ -365,11 +365,11 @@ const client_manifest = {
       "_DlAUqK2U.js"
     ],
     "css": [
-      "cases.lPZf8T6H.css"
+      "cases.CXXH5wl3.css"
     ]
   },
-  "cases.lPZf8T6H.css": {
-    "file": "cases.lPZf8T6H.css",
+  "cases.CXXH5wl3.css": {
+    "file": "cases.CXXH5wl3.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true
@@ -402,7 +402,7 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "CDzCrYlW.js",
+    "file": "Dhy56-wu.js",
     "name": "index",
     "src": "pages/index.vue",
     "isDynamicEntry": true,
@@ -413,11 +413,11 @@ const client_manifest = {
       "_D0sNgIwJ.js"
     ],
     "css": [
-      "index.B8-8KSm-.css"
+      "index.D2uKYw9x.css"
     ]
   },
-  "index.B8-8KSm-.css": {
-    "file": "index.B8-8KSm-.css",
+  "index.D2uKYw9x.css": {
+    "file": "index.D2uKYw9x.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true
@@ -427,7 +427,7 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "BQNy5e_5.js",
+    "file": "mMUDWHw4.js",
     "name": "services",
     "src": "pages/services.vue",
     "isDynamicEntry": true,
@@ -437,11 +437,11 @@ const client_manifest = {
       "_DlAUqK2U.js"
     ],
     "css": [
-      "services.D7hHk1Mx.css"
+      "services.Cws-Xs4t.css"
     ]
   },
-  "services.D7hHk1Mx.css": {
-    "file": "services.D7hHk1Mx.css",
+  "services.Cws-Xs4t.css": {
+    "file": "services.Cws-Xs4t.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true
