@@ -53,20 +53,32 @@ defineProps(['style']);
 
 .navigation-menu {
   position: fixed;
-  top: 2rem;
+  top: 3rem;
   right: 2rem;
   z-index: 1000;
 }
 
+@media(max-width: 1650px){
+  .navigation-menu {
+   top: 2.7rem;
+}
+
+}
 @media(max-width: 1400px){
   .photo-gallery-container{
     margin-left: 16.466666666666665vw;
   }
+  .navigation-menu {
+    top: 2.0rem;
+}
 }
 @media(max-width: 992px){
   .photo-gallery-container{
     margin-left: 15.466666666666665vw;
   }
+    .navigation-menu {
+    top: 1.7rem;
+}
 }
 
 @media(max-width: 768px){
