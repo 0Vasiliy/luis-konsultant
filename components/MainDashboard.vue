@@ -47,7 +47,7 @@ defineProps(['style']);
   flex-direction: column;
   align-items: flex-start;
   z-index: 0;
-  margin-left: 31.466666666666665vw;
+  margin-left: 18.466666666666665vw;
   margin-top: 2.533333333333333vw;
 }
 
@@ -56,5 +56,61 @@ defineProps(['style']);
   top: 2rem;
   right: 2rem;
   z-index: 1000;
+}
+
+@media(max-width: 1400px){
+  .photo-gallery-container{
+    margin-left: 16.466666666666665vw;
+  }
+}
+@media(max-width: 992px){
+  .photo-gallery-container{
+    margin-left: 15.466666666666665vw;
+  }
+}
+
+@media(max-width: 768px){
+  .photo-gallery-container{
+    margin-left: 14.466666666666665vw;
+  }
+  .navigation-menu{
+    top: 1.5rem;
+  }
+}
+
+@media(max-width: 650px){
+  .photo-gallery-container{
+    margin-left: 13.466666666666665vw;
+  }
+  .navigation-menu{
+    top: 1.3rem;
+  }
+}
+
+@media(max-width: 550px){
+  .photo-gallery-container{
+    margin-left: 11.466666666666665vw;
+  }
+  .navigation-menu{
+    top: 1.1rem;
+  }
+}
+
+@media(max-width: 450px){
+  .photo-gallery-container{
+    margin-left: 9.466666666666665vw;
+  }
+  .navigation-menu{
+    top: 0.9rem;
+  }
+}
+
+@media(max-width: 400px){
+  .photo-gallery-container{
+    margin-left: 7.466666666666665vw;
+  }
+  .navigation-menu{
+    top: 0.8rem;
+  }
 }
 </style>

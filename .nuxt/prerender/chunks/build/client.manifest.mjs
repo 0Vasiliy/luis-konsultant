@@ -266,7 +266,7 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "CBMi1QyV.js",
+    "file": "RQxL2biQ.js",
     "name": "entry",
     "src": "node_modules/nuxt/dist/app/entry.js",
     "isEntry": true,
@@ -356,7 +356,7 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "Db0vNlmR.js",
+    "file": "DBTHae7r.js",
     "name": "cases",
     "src": "pages/cases.vue",
     "isDynamicEntry": true,
@@ -365,11 +365,11 @@ const client_manifest = {
       "_DlAUqK2U.js"
     ],
     "css": [
-      "cases.B__tO7X4.css"
+      "cases.lPZf8T6H.css"
     ]
   },
-  "cases.B__tO7X4.css": {
-    "file": "cases.B__tO7X4.css",
+  "cases.lPZf8T6H.css": {
+    "file": "cases.lPZf8T6H.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true

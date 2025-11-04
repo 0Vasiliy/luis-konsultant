@@ -687,9 +687,5 @@ onMounted(() => {
     padding: 0.8rem 1.2rem;
     font-size: 0.9rem;
   }
-  
-  /* .results-grid {
-    grid-template-columns: repeat(2, 1fr);
-  } */
 }
 </style>

@@ -771,7 +771,7 @@ const handleFormSubmitted = (data: any) => {
 
 .single-consultation-btn {
   position: fixed;
-  bottom: 5rem;
+  bottom: 0.7%;
   right: 2rem;
   background: linear-gradient(135deg, #14b8a6, #0d9488);
   color: white;

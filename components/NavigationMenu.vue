@@ -335,4 +335,11 @@ onUnmounted(() => {
     width: 18px;
   }
 }
+
+@media(max-width: 550px){
+  .menu-toggle {
+    width: 35px;
+    height: 35px;
+  }
+}
 </style>
